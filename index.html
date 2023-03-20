@@ -1,11 +1,8 @@
-{% extends "base.html" %}
-{% load static %}
-{% block main %}
 <script type="text/javascript" src="speech.js">
 </script>
-<h2>ほんやくこんにゃく</h2>
+<h1>ほんやくこんにゃく</h1>
 <hr>
-<h4>
+<h2>
 <form id="inputtag2" class="text-info">
     入力言語を選ぶ(Choose an input language)
 <select class="form-select" name="jap" id="inputtag">
@@ -46,7 +43,7 @@
     <option value="zu">スワヒリ語（東アフリカ）（Kiswahili）</option>
 </select>
 </form>
-</h4>
+</h2>
 <h2>
 <div id="input-div" class="text-info"></div>
 </h2>
@@ -127,5 +124,3 @@
 <script type="text/javascript" src="honyakuButton.js">
 </script>
 
-
-{% endblock main %}
