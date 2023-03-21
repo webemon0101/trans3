@@ -6,3 +6,8 @@
     align-self: end;
   justify-self: end;
 }
+
+.english{
+  color:orange;
+  font-size:30px;
+}

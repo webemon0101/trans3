@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
+  <title>Webemon</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
@@ -14,8 +14,8 @@
 <hr>
 <h2>
 <form id="inputtag2" class="Card">
-    入力言語を選ぶ(Choose an input language)
-<select class="Card" name="jap" id="inputtag">
+    入力言語を選ぶ<div class="english">(Choose an input language)</div> 
+<select name="jap" id="inputtag">
     <option value="ja-JP" selected>日本語（Japanese）</option>
     <option value="en-US">英語(アメリカ)（US English）</option>
     <option value="en-GB">英語(イギリス)（UK English）</option>
@@ -54,14 +54,16 @@
 </select>
 </form>
 </h2>
+<!--
 <h2>
 <div id="input-div" class="text-info"></div>
 </h2>
+-->
 <hr>
-<h4>
+<h2>
 <form id="outputtag2" class="Card">
-    出力言語を選ぶ(Choose an output language)
-<select class="Card" name="eng" id="outputtag">
+    出力言語を選ぶ<div class="english">(Choose an output language)</div> 
+<select name="eng" id="outputtag">
     <option value="ja-JP">日本語（Japanese）</option>
     <option value="en-US" selected>英語(アメリカ)（US English）</option>
     <option value="en-GB">英語(イギリス)（UK English）</option>
@@ -99,10 +101,14 @@
     <option value="zu">スワヒリ語（東アフリカ）（Kiswahili）</option>
 </select>
 </form>
-</h4>
-<h2>    
-<div id="result-div" class="text-danger"></div>
 </h2>
+ <!--
+<h2>    
+   
+<div id="result-div" class="text-danger"></div>
+  
+</h2>
+-->
 <hr>
 <div>
     <button id="start-btn" class="btn btn-primary btn-lg col-12">
