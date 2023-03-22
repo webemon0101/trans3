@@ -13,12 +13,59 @@
 }
 
 p{
-  color:rgb(250, 11, 11);
-  font-size:30px;
+  
+  font-size:18px;
 }
 
 .btn{
   width:150px;
   height: 150px;
   color:green;
+}
+
+.btn1{
+  display: inline-block;
+  width:200px;
+  height:200px;
+  padding:10px 0;
+  margin:10px 0;
+  text-align: center;
+  background: skyblue;
+  font-weight:bold;
+  color:white;
+
+
+}
+
+.parent{
+  width:auto;
+  text-align:center;
+  
+}
+
+h1{
+  text-align:center;
+}
+
+#inputtag{
+  padding:10px;
+  margin:10px;
+  font-size:15px;
+}
+
+#outputtag{
+  padding:10px;
+  margin:10px;
+  font-size:15px;
+}
+
+.btnlist{
+  display:inline-block;
+  width:30%;
+  background:yellow;
+  color:brown;
+}
+
+div{
+  text-align:center;
 }
