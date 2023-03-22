@@ -9,12 +9,12 @@
 
 .english{
   color:orange;
-  font-size:15px;
+  font-size:small;
 }
 
 p{
   
-  font-size:18px;
+  font-size:large;
 }
 
 .btn{
@@ -25,14 +25,14 @@ p{
 
 .btn1{
   display: inline-block;
-  width:200px;
-  height:200px;
+  width:50%;
   padding:10px 0;
   margin:10px 0;
   text-align: center;
   background: skyblue;
   font-weight:bold;
   color:white;
+  aspect-ratio: 1/1;
 
 
 }
@@ -50,13 +50,13 @@ h1{
 #inputtag{
   padding:10px;
   margin:10px;
-  font-size:15px;
+  font-size:large;
 }
 
 #outputtag{
   padding:10px;
   margin:10px;
-  font-size:15px;
+  font-size:large;
 }
 
 .btnlist{
@@ -64,8 +64,11 @@ h1{
   width:30%;
   background:yellow;
   color:brown;
+  aspect-ratio: 1 / 1;
+  font-size:small;
 }
 
 div{
   text-align:center;
+  font-size:larger;
 }
