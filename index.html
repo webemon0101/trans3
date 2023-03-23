@@ -15,9 +15,55 @@
 </script>
 <h1>ほんやくこんにゃく</h1>
 <hr>
+<h2 class="reverse">
+<form id="outputtag2" class="Card">
+    <div>出力言語を選ぶ</div><div class="english">(Choose an input language)</div> 
+<select name="eng" id="outputtag">
+    <option value="ja-JP" >日本語（Japanese）</option>
+    <option value="en-US" selected>英語(アメリカ)（US English）</option>
+    <option value="en-GB">英語(イギリス)（UK English）</option>
+    <option value="zh-CN">中国語（中文）</option>
+    <option value="es">スペイン語（Español）</option>
+    <option value="hi">ヒンディー語（インド）（हिंदी）</option>
+    <option value="ar">アラビア語（عربى）</option>
+    <option value="pl">ポルトガル語（ブラジル）（Portugues do Brasil）</option>
+    <option value="ru">ロシア語（русский）</option>
+    <option value="bn">ベンガル語（バングラディシュ）（বাংলা）</option>
+    <option value="de-DE">ドイツ語（Deutsch）</option>
+    <option value="jv">ジャワ語（Wong jawa）</option>
+    <option value="ko-KR">韓国語（한국）</option>
+    <option value="pa">パンジャブ語（インド北部）（ਪੰਜਾਬੀ）</option>
+    <option value="te">テルグ語（インド南東部）（తెలుగు）</option>
+    <option value="fr-FR">フランス語（Français）</option>
+    <option value="mr">マラーティー語（インド西部）（मराठी）</option>
+    <option value="ta">タミル語（インド南部）（தமிழ்）</option>
+    <option value="it-IT">イタリア語（Italiano）</option>
+    <option value="el">現代ギリシア語（ελληνική γλώσσα）</option>
+    <option value="gu">グジャラート語（インド）（ગુજરાતી）</option>
+    <option value="id">インドネシア語（Bahasa Indonesia）</option>
+    <option value="ka">ジョージア語（グルジア）（ქართული）</option>
+    <option value="km">クメール語（カンボジア）（ខ្មែរ）</option>
+    <option value="kn">カンナダ語（インド南部）（ಕನ್ನಡ）</option>
+    <option value="my">ビルマ語（ミャンマー）（ဗမာ）</option>
+    <option value="ne">ネパール語（नेपाली）</option>
+    <option value="nl">オランダ語（Nederlands）</option>
+    <option value="pl">ポーランド語（Polski）</option>
+    <option value="si">シンハラ語（スリランカ）（සිංහල）</option>
+    <option value="th">タイ語（ไทย）</option>
+    <option value="tl">タガログ語（フィリピン）（Tagalog）</option>
+    <option value="zh-HK">香港語（香港）</option>
+    <option value="zh-TW">台湾語（台湾）</option>
+    <option value="zu">スワヒリ語（東アフリカ）（Kiswahili）</option>
+</select>
+</form>
+
+<div id="result-div" class="text-info"></div>
+</h2>
+<hr>
+<hr>
 <h2>
 <form id="inputtag2" class="Card">
-    <div>入力言語を選ぶ</div><div class="english">(Choose an input language)</div> 
+    <div>入力言語を選ぶ</div><div class="english">(Choose an output language)</div> 
 <select name="jap" id="inputtag">
     <option value="ja-JP" selected>日本語（Japanese）</option>
     <option value="en-US">英語(アメリカ)（US English）</option>
@@ -58,65 +104,16 @@
 </form>
 </h2>
 
-<h2>
-<div id="input-div" class="text-info"></div>
-</h2>
-
-<hr>
-<h2>
-<form id="outputtag2" class="Card">
-    <div>出力言語を選ぶ</div><div class="english">(Choose an output language)</div> 
-<select name="eng" id="outputtag">
-    <option value="ja-JP">日本語（Japanese）</option>
-    <option value="en-US" selected>英語(アメリカ)（US English）</option>
-    <option value="en-GB">英語(イギリス)（UK English）</option>
-    <option value="zh-CN">中国語（中文）</option>
-    <option value="es">スペイン語（Español）</option>
-    <option value="hi">ヒンディー語（インド）（हिंदी）</option>
-    <option value="ar">アラビア語（عربى）</option>
-    <option value="pl">ポルトガル語（ブラジル）（Portugues do Brasil）</option>
-    <option value="ru">ロシア語（русский）</option>
-    <option value="bn">ベンガル語（バングラディシュ）（বাংলা）</option>
-    <option value="de-DE">ドイツ語（Deutsch）</option>
-    <option value="jv">ジャワ語（Wong jawa）</option>
-    <option value="ko-KR">韓国語（한국）</option>
-    <option value="pa">パンジャブ語（インド北部）（ਪੰਜਾਬੀ）</option>
-    <option value="te">テルグ語（インド南東部）（తెలుగు）</option>
-    <option value="fr-FR">フランス語（Français）</option>
-    <option value="mr">マラーティー語（インド西部）（मराठी）</option>
-    <option value="ta">タミル語（インド南部）（தமிழ்）</option>
-    <option value="it-IT">イタリア語（Italiano）</option>
-    <option value="el">現代ギリシア語（ελληνική γλώσσα）</option>
-    <option value="gu">グジャラート語（インド）（ગુજરાતી）</option>
-    <option value="id">インドネシア語（Bahasa Indonesia）</option>
-    <option value="ka">ジョージア語（グルジア）（ქართული）</option>
-    <option value="km">クメール語（カンボジア）（ខ្មែរ）</option>
-    <option value="kn">カンナダ語（インド南部）（ಕನ್ನಡ）</option>
-    <option value="my">ビルマ語（ミャンマー）（ဗမာ）</option>
-    <option value="ne">ネパール語（नेपाली）</option>
-    <option value="nl">オランダ語（Nederlands）</option>
-    <option value="pl">ポーランド語（Polski）</option>
-    <option value="si">シンハラ語（スリランカ）（සිංහල）</option>
-    <option value="th">タイ語（ไทย）</option>
-    <option value="tl">タガログ語（フィリピン）（Tagalog）</option>
-    <option value="zh-HK">香港語（香港）</option>
-    <option value="zh-TW">台湾語（台湾）</option>
-    <option value="zu">スワヒリ語（東アフリカ）（Kiswahili）</option>
-</select>
-</form>
-</h2>
-
 <h2>    
    
-<div id="result-div" class="text-danger"></div>
+<div id="input-div" class="text-danger"></div>
   
 </h2>
 
 <hr>
 <div class="parent">
     <button id="start-btn" class="btn1"><img src="mic.jpg">
-        押してから話す
-        <p>（Press and then talk)</p>
+      
     </button>
 </div>
 <p></p>

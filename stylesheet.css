@@ -34,6 +34,18 @@ p{
   color:pink;
   aspect-ratio: 1/1;
   font-size:xx-large;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   text-decoration: none;
+   text-align: center;
+   margin: 10px 0;
+   display: inline-flex;    /* 修正 */
+   justify-content: center; /* 追加 左右中央 */
+   align-items: center;     /* 追加 上下中央 */
+   
 
 
 }
@@ -82,4 +94,24 @@ h2{
 img{
   width:100%;
   aspect-ratio:1/1;
+  display:inline-block;
+  
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+   width: 200px;
+   height: 200px;
+   background: #6fa1ff;
+   color: #FFF;
+   text-decoration: none;
+   text-align: center;
+   margin: 10px 0;
+   
+  
+}
+
+.reverse{
+  transform:scale(-1,-1);
 }
