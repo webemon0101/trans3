@@ -109,7 +109,7 @@ startBtn.onclick = () => {
 startBtn2.onclick = () => {
     recognition.stop();
     recognition2.stop();
-    recognition.lang = outputTag;
+    recognition2.lang = outputTag;
     speechSynthesis.cancel();
     recognition2.start();
 }
@@ -143,8 +143,11 @@ reverseBtn.onclick =() =>{
     inputTag=document.getElementById('inputtag2').jap.value;
     outputTag=document.getElementById('outputtag2').eng.value;
     recognition.stop();
+    recognition2.stop();
     recognition.lang = inputTag;
+    recognition2.lang = outputTag;
     speechSynthesis.cancel();
+    /*
     recognition.start();
-
+    */
 }
