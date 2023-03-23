@@ -81,6 +81,10 @@ h1{
   color:brown;
   aspect-ratio: 1 / 1;
   font-size:x-large;
+  display: inline-flex;    /* 修正 */
+   justify-content: center; /* 追加 左右中央 */
+   align-items: center;     /* 追加 上下中央 */
+   
 }
 
 div{
