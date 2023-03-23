@@ -42,6 +42,7 @@ function translate(scripttext){
         translatedSentense = ttext;
         multispeaknow(translatedSentense,outputTag);
         recognition.stop();
+        recognition2.stop();
     });
 }
 
@@ -57,6 +58,7 @@ function translate2(scripttext){
         speechSynthesis.cancel();
         translatedSentense = ttext;
         multispeaknow(translatedSentense,inputTag);
+        recognition.stop();
         recognition2.stop();
     });
 }
@@ -64,10 +66,12 @@ function translate2(scripttext){
 document.getElementById('inputtag2').onchange = function(){
     inputTag=document.getElementById('inputtag2').jap.value;
     recognition.lang = inputTag;
+    
 }
 
 document.getElementById('outputtag2').onchange = function(){
     outputTag=document.getElementById('outputtag2').eng.value;
+    recognition2.lang = outputTag;
 }
 
 recognition.onresult = (event) => {
