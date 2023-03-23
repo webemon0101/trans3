@@ -13,8 +13,10 @@
 <body>
 <script type="text/javascript" src="speech.js">
 </script>
+<!--
 <h1>ほんやくこんにゃく</h1>
 <hr>
+-->
 <h2 class="reverse">
 <form id="outputtag2" class="Card">
     <div>出力言語を選ぶ</div><div class="english">(Choose an input language)</div> 
@@ -60,13 +62,22 @@
 <div id="result-div" class="text-info"></div>
 <hr>
 <div class="parent">
-    <button id="start-btn2" class="btn1"><img src="mic.jpg">
+    <button id="start-btn2" class="btn1"><img src="mic.jpg" class="b1">
     </button>
 </div>
 </h2>
 
 <hr>
 <hr>
+
+<div>    
+    <button id="reverse-btn" class="btnlist"><img src="reverse.png" alt="入力⇔出力（Reverse)">
+    </button>
+    <button id="rep-btn" class="btnlist"><img src="respeak.png" alt="もう一度発音（Repeat)"> 
+    </button>
+    <button id="trans-btn" class="btnlist"><img src="retranslate.jpg" alt="再翻訳（Retranslate)">
+    </button>
+</div>
 <hr>
 <hr>
 
@@ -121,23 +132,10 @@
 
 <hr>
 <div class="parent">
-    <button id="start-btn" class="btn1"><img src="mic.jpg">
+    <button id="start-btn" class="btn1"><img src="mic.jpg" class="b1" alt="音声入力（Speak)">
     </button>
 </div>
-<p></p>
-<div>    
-    <button id="reverse-btn" class="btnlist">
-        <p>入力⇔出力</p><p>（Reverse)</p>
-    </button>
 
-    <button id="rep-btn" class="btnlist">
-        <p>もう一度発音</p><p>（Repeat)</p>
-    </button>
-
-    <button id="trans-btn" class="btnlist">
-        <p>再翻訳</p><p>（Retranslate)</p>
-    </button>
-</div>
 
 <hr>
 <p>version beta 0.1</p>

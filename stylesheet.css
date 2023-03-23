@@ -24,7 +24,7 @@ p{
 }
 
 .btn1{
-  display: inline-block;
+  /*display: inline-block;*/
   width:50%;
   padding:10px 0;
   margin:10px 0;
@@ -91,10 +91,11 @@ h2{
   text-align:center;
 }
 
-img{
+.b1{
   width:100%;
   aspect-ratio:1/1;
   display:inline-block;
+  
   
    border-radius: 50%;
    display: flex;
@@ -108,10 +109,14 @@ img{
    text-decoration: none;
    text-align: center;
    margin: 10px 0;
-   
+
   
 }
 
 .reverse{
   transform:scale(-1,-1);
+}
+
+img{
+  width:100%;
 }
