@@ -1,5 +1,8 @@
 
 const startBtn=document.querySelector('#start-btn');
+
+const startBtn2=document.querySelector('#start-btn2');
+
 const repBtn = document.querySelector('#rep-btn');
 const transBtn = document.querySelector('#trans-btn');
 const reverseBtn = document.querySelector('#reverse-btn');
@@ -21,6 +24,11 @@ recognition.lang = inputTag;
 recognition.interimResults = true;
 recognition.continuous = false;
 
+var recognition2 = new SpeechRecognition();
+recognition2.lang = outputTag;
+recognition2.interimResults = true;
+recognition2.continuous = false;
+
 function translate(scripttext){
     let urladd='https://script.google.com/macros/s/AKfycbxn85uDVijnIBFqQEeP13_4I5DrwivCHZq7BaZRPjSxlhiS3r52USbL0MpNxDBDRPon/exec?text='
     let urlsequence=urladd+scripttext+'&souce='+inputTag+'&target='+outputTag;
@@ -34,6 +42,22 @@ function translate(scripttext){
         translatedSentense = ttext;
         multispeaknow(translatedSentense,outputTag);
         recognition.stop();
+    });
+}
+
+function translate2(scripttext){
+    let urladd='https://script.google.com/macros/s/AKfycbxn85uDVijnIBFqQEeP13_4I5DrwivCHZq7BaZRPjSxlhiS3r52USbL0MpNxDBDRPon/exec?text='
+    let urlsequence=urladd+scripttext+'&souce='+outputTag+'&target='+inputTag;
+    fetch(urlsequence)
+    .then(rresponse=>{
+        return rresponse.text();
+    })
+    .then(ttext=>{
+        japaneseDiv.innerHTML=ttext;
+        speechSynthesis.cancel();
+        translatedSentense = ttext;
+        multispeaknow(translatedSentense,inputTag);
+        recognition2.stop();
     });
 }
 
@@ -58,11 +82,32 @@ recognition.onresult = (event) => {
     }
 }
 
+recognition2.onresult = (event) => {
+    speechSynthesis.onvoiceschanged = () => {
+        voices = window.speechSynthesis.getVoices();
+    }
+    if(event.results[0].isFinal){
+        originalSentense=event.results[0][0].transcript;
+        resultDiv.innerHTML=originalSentense;
+        //document.forms["input"].elements["elem"].value=originalSentense;
+        translate2(originalSentense);
+    }
+}
+
 startBtn.onclick = () => {
     recognition.stop();
+    recognition2.stop();
     recognition.lang = inputTag;
     speechSynthesis.cancel();
     recognition.start();
+}
+
+startBtn2.onclick = () => {
+    recognition.stop();
+    recognition2.stop();
+    recognition.lang = outputTag;
+    speechSynthesis.cancel();
+    recognition2.start();
 }
 
 repBtn.onclick = () => {
