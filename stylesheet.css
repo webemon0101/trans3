@@ -75,16 +75,16 @@ h1{
 }
 
 .btnlist{
-  display:inline-block;
+  /*display:inline-block;*/
   width:30%;
   background:yellow;
   color:brown;
   aspect-ratio: 1 / 1;
   font-size:x-large;
   display: inline-flex;    /* 修正 */
-   justify-content: center; /* 追加 左右中央 */
-   align-items: center;     /* 追加 上下中央 */
-   
+  justify-content: center; /* 追加 左右中央 */
+  align-items: center;     /* 追加 上下中央 */
+  transform:rotate(-90deg);   
 }
 
 div{
@@ -123,4 +123,17 @@ h2{
 
 img{
   width:100%;
+}
+
+.selector{
+  border: 0.5rem outset pink;
+  /*
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  */
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  
 }
