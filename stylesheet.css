@@ -46,7 +46,8 @@ p{
    justify-content: center; /* 追加 左右中央 */
    align-items: center;     /* 追加 上下中央 */
    
-   border: 0.5rem outset slateblue;
+   border: 0.7rem outset slateblue;
+   border-radius: 12px;
 
 
 }
