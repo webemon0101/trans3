@@ -46,7 +46,7 @@ p{
    justify-content: center; /* 追加 左右中央 */
    align-items: center;     /* 追加 上下中央 */
    
-   border: 0.7rem outset slateblue;
+   border: 0.7rem outset lightblue;
 
 
 }
@@ -89,7 +89,10 @@ h1{
   border: 0.5rem outset yellow;
   border-radius: 12px;
 }
-
+ .btnlist .sonomama{
+  transform:rotate(90deg);
+ }
+ 
 div{
   text-align:center;
 }
